@@ -1,0 +1,24 @@
+{
+  "fratal function snippet": {
+    "prefix": "ffs",
+    "body": [
+      "const ${1:name} = async ({ ${2:input} }) => {",
+      "  const payload = { success: false, data: null, message: '', errors: [] };",
+      "  try {",
+      "    $0",
+      "",
+      "    payload.success = true;",
+      "    payload.data = data;",
+      "    return payload;",
+      "  } catch (error) {",
+      "    console.error(error);",
+      "    payload.success = false;",
+      "    payload.data = null;",
+      "    payload.errors = payload.errors.concat(error.message);",
+      "    return payload;",
+      "  }",
+      "};"
+    ],
+    "description": "Create a Function with Fractal Pattern"
+  }
+}
