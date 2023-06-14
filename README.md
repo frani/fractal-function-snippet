@@ -17,6 +17,16 @@
 	<a href="https://marketplace.visualstudio.com/items?itemName=frani.fractal-function-snippet"><img alt="Visual Studio Marketplace Rating" src="https://img.shields.io/visual-studio-marketplace/stars/frani.fractal-function-snippet?label=rating&logo=visual-studio-code&logoColor=blue"></a>
 </p>
 
+---
+
+# Demo
+
+usage: type `ffs` then click on TAB
+
+<p align="center">
+  <img width="800" alt="fractal function snippet demo" src="https://github.com/frani/fractal-function-snippet/raw/main/images/demo.gif">
+</p>
+
 # About
 
 Fractal Function Pattern was made as a solution to give a way of handler errors in a isolated way, so if something explot in a function, instead of keep throwing the error through all the system is going to receive an idempotent response so when function's caller receive the response, can determinated of what is going to receive in case something went wrong then take decition of what to do.
