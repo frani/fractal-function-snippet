@@ -1,0 +1,35 @@
+{
+  "fratal function snippet": {
+    "prefix": "ffs",
+    "body": [
+      "const ${1:name} = async (${2:input}): FractalResponse<${3:any}> => {",
+      "  const payload: FractalResponse = { success: false, data: null, message: '', error: null };",
+      "  try {",
+      "    $0",
+      "",
+      "    payload.success = true;",
+      "    payload.data = data;",
+      "    return payload;",
+      "  } catch (error) {",
+      "    payload.success = false;",
+      "    payload.data = null;",
+      "    payload.error = error",
+      "    return payload;",
+      "  }",
+      "};"
+    ],
+    "description": "Create a Function with Fractal Pattern for Typescript"
+  },
+  "fratal response type": {
+    "prefix": "ffstype",
+    "body": [
+      "Interface FractalResponse<T = any> {",
+      "  success: boolean;",
+      "  data: T | null;",
+      "  message: string;",
+      "  error: any | null;",
+      "}"
+    ],
+    "description": "Create a Function with Fractal Pattern for Typescript"
+  }
+}

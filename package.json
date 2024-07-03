@@ -22,6 +22,7 @@
   "keywords": [
     "nodejs",
     "javascript",
+    "typescript",
     "fractals",
     "fractal",
     "fractal pattern",
@@ -32,6 +33,10 @@
       {
         "language": "javascript",
         "path": "./snippets/fractal.json"
+      },
+      {
+        "language": "yypescript",
+        "path": "./snippets/fractal.yypescript.json"
       }
     ]
   }
